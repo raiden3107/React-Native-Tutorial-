@@ -7,13 +7,15 @@ const HomeScreen = ({ navigation }) => {
       <Text style={styles.text}>HomeScreen</Text>
       <Button
         title="Go to components screen"
-        onPress={() => navigation.navigate('Component')}
+        onPress={() => navigation.navigate("Component")}
       />
-      <TouchableOpacity onPress={() => navigation.navigate('Flat')}>
+      <TouchableOpacity onPress={() => navigation.navigate("Flat")}>
         <Text>Go to list screen</Text>
       </TouchableOpacity>
+
+      <Button title="Go to image screen" onPress={() => navigation.navigate('Image')}/>
     </>
-  )
+  );
 };
 
 const styles = StyleSheet.create({
